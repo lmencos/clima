@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import Header from './components/Header';
-import Formulario from './components/Formulario';
 
 function App() {
   return (
@@ -12,12 +11,7 @@ function App() {
         <div className="container" >
           <div className="row" >
             <div className="col m6 s12" >
-              <Formulario 
-                
-              />
-            </div>
-            <div className="col m6 s12" >
-              2
+              1
             </div>
 
           </div>

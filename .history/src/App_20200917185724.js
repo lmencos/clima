@@ -12,9 +12,7 @@ function App() {
         <div className="container" >
           <div className="row" >
             <div className="col m6 s12" >
-              <Formulario 
-                
-              />
+              1
             </div>
             <div className="col m6 s12" >
               2

@@ -41,7 +41,7 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label {
 }
 .mensaje {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .buscador i {
   width: 100%;
