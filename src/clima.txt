@@ -100,5 +100,5 @@ Index HTML:
       });
     </script>
 
-URL react
+URL react para consultar la API en useEffect:
 http://api.openweathermap.org/data/2.5/weather?q=guadalajara,mexico&appid=c11a5e2033f0f29d1b7944c7a5563668
