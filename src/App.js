@@ -8,15 +8,15 @@ function App() {
       <Header 
         titulo='Clima Luchísimo'
       />
-      <div className="contenedor-form" >
+      <div className="contenedor-form">
         <div className="container" >
           <div className="row" >
-            <div className="col m6 s12" >
+            <div className="col m6 s12">
               <Formulario 
                 
               />
             </div>
-            <div className="col m6 s12" >
+            <div className="col m6 s12">
               2
             </div>
 

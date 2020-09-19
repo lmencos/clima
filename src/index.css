@@ -14,7 +14,7 @@ nav .brand-logo {
 }
 
 .input-field input[type=text]:focus + label {
-  color: white;
+  color: #03a9f4;
 } 
 
 .input-field input[type=text]:focus {

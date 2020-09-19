@@ -8,6 +8,8 @@ const [ busqueda, guardarBusqueda ] = useState({
   pais: ''
 });
 
+const [ error, guardarError ] = useState(false);
+
 // extraer ciudad, pais
 const { ciudad, pais } = busqueda;
 
@@ -16,12 +18,32 @@ const handleChange = (e) => {
   //actualizar state
   guardarBusqueda({
     ...busqueda,
-    [e.target.name] : [e.target.value]
+    [e.target.name] : e.target.value
   });
 }
 
+//cuando el usuario da submit al form
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  //Validar
+  if(ciudad.trim() === '' || pais.trim() === '') {
+    guardarError(true);
+    return;
+  }
+  guardarError(false);
+
+  //Pasarlo al componente principal
+
+};
+
   return ( 
-    <form action="">
+    <form 
+      onSubmit={handleSubmit}
+    >
+
+    {error ?  <p className="red darken-4 error" >Favor de capturar todos los campos</p> : null}
+
       <div className="input-field col s12" >
         <input 
           type="text"
@@ -50,6 +72,17 @@ const handleChange = (e) => {
         </select>
         <label htmlFor="pais">País:</label>
       </div>
+
+      <div className="input-field col s12" >
+        <button 
+          type="submit"
+          value="Buscar clima"
+          className="waves-effectwaves-light btn-large btn-block yellow accent-4"
+
+        >Buscar clima</button>
+
+      </div>
+
     </form>
    );
 }
