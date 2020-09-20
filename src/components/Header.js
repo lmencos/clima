@@ -5,7 +5,7 @@ const Header = ({ titulo }) => {
   return ( 
     <nav>
       <div className="nav-wrapper light-blue darken-2" >
-        <a href="#!">{titulo}</a>
+        <a href="#!" className="tituloApp">{titulo}</a>
       </div>
     </nav>
    );
