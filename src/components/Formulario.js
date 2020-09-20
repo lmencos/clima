@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Error from './Error';
 
 const Formulario = ({ busqueda, guardarBusqueda, guardarConsultar }) => {
 
@@ -36,8 +37,7 @@ const handleSubmit = (e) => {
     <form 
       onSubmit={handleSubmit}
     >
-
-    {error ?  <p className="red darken-4 error" >Favor de capturar todos los campos</p> : null}
+      { error? <Error mensaje="Ambos campos son obligatorios"/> : null }
 
       <div className="input-field col s12" >
         <input 
