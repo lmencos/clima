@@ -13,17 +13,17 @@ const Clima = ({resultado}) => {
   return ( 
     <div className="card-panel white col s12">
       <div className="back-text">
-        <h3>El clima de {name} es: </h3>
+        <h3>Clima de {name}: </h3>
         <p className="temperatura">
           { parseFloat( main.temp - kelvin, 10 ).toFixed(2) } <span> &#x2103; </span>
         </p>
-        <p>Temp. máxima:
+        <p>Temp. máx:__
           { parseFloat( main.temp_max - kelvin, 10 ).toFixed(2) } <span> &#x2103; </span>
         </p>
-        <p>Temp. Mínima:
+        <p>Temp. Mín:__
           { parseFloat( main.temp_min - kelvin, 10 ).toFixed(2) } <span> &#x2103; </span>
         </p>
-        <p>Clima:
+        <p>Clima:__
           { weather[0].description } 
         </p>
       </div>
