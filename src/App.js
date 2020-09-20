@@ -45,6 +45,7 @@ function App() {
 
     console.log('Ciudad: ', ciudad);
     console.log('País: ', pais );
+    //eslint-disable-next-line
   }, [consultar]);
 
     //Mostrando mensaje de error cuando no hay datos
